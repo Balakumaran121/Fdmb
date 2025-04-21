@@ -14,7 +14,7 @@ const MoviesCard = ({ movies }) => {
     const [openEditForm, setOpenEditForm] = useState(false)
 
     const handleEdit = () => {
-        setOpenEditForm(true)
+        setOpenEditForm((prev)=>!prev)
     }
     useEffect(() => {
         if (movies) {
@@ -36,7 +36,7 @@ const MoviesCard = ({ movies }) => {
                 <button className='pl-30 mt-10 text-lg font-medium cursor-pointer hover:text-red-500' onClick={() => navigate("/")}>Back</button>
                 <div className='inline-flex gap-3'>
 
-                    <button className='ml-[60%] text-amber-400 text-xl font-medium cursor-pointer ' onClick={handleEdit}>Edit</button>
+                    <button className='ml-[60%] text-amber-400 text-xl font-medium cursor-pointer ' onClick={handleEdit}>{openEditForm?"Close":"Edit"}</button>
                     <button className='ml-[70%] text-amber-400 text-xl font-medium cursor-pointer' onClick={() => handleDelete(movies[0]?.id)}>Delete</button>
                 </div>
             </div>
@@ -78,7 +78,7 @@ const MoviesCard = ({ movies }) => {
                                     <div className='w-full gap-10 flex'>
 
                                         <button className='bg-amber-500 px-10 py-4 rounded-xl text-lg font-bold cursor-pointer' onClick={handleSubmit}>Submit</button>
-                                        <button className='border border-amber-500 hover:bg-amber-500 hover:text-white cursor-pointer px-10 py-4 rounded-xl text-lg font-bold'>Close</button>
+                                        <button className='border border-amber-500 hover:bg-amber-500 hover:text-white cursor-pointer px-10 py-4 rounded-xl text-lg font-bold' onClick={handleEdit}>Close</button>
                                     </div>
                                 </div>
 
