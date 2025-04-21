@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Balakumaran121.github.io/Fdmb",
+  "homepage": "https://balakumaran121.github.io/Fdmb",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
