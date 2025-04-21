@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { persistor, store } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react'
-
+console.log("ffffff")
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename="/Fdmb">
