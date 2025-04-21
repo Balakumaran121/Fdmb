@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.swiper-button-prev {
+    display: none !important;
+  }
+  
