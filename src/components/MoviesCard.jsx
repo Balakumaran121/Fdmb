@@ -21,7 +21,7 @@ const MoviesCard = ({ movies }) => {
             setSelectedData(movies[0])
         }
     }, [movies])
-    console.log(selectedData, "LKO")
+
     const handleChange = (e) => {
         const { name, value } = e.target
         setSelectedData((prev) => ({ ...prev, [name]: value }))

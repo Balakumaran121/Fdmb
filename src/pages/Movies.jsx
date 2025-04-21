@@ -19,7 +19,6 @@ const Movies = () => {
 
 
   const renderMovies = searchText ? searchTextData : movies
-  console.log(renderMovies,"al")
   return (
     <div className='bg-zinc-900 text-white'>
       {
