@@ -13,11 +13,8 @@ const Movies = () => {
   }
   const singleMovieId = pathname.split('/').pop();
   const { movies } = useSelector((state) => state.movie);
-
   const searchTextData = searchText==="All"?movies: movies.filter(movie => Object.values(movie).some(value => String(value).toLowerCase().includes(searchText.toLowerCase())))
   const filterMovies = movies.filter((val) => val.id === parseInt(singleMovieId));
-
-
   const renderMovies = searchText ? searchTextData : movies
   return (
     <div className='bg-zinc-900 text-white'>

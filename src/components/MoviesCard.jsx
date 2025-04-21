@@ -56,6 +56,7 @@ const MoviesCard = ({ movies }) => {
                             </div>
                             {!openEditForm ?
                                 <div className='flex flex-col gap-5 justify-center '>
+                                    <h3 className={`text-lg ${movie.producer?"not-sr-only":"sr-only"}`}>Producer : <span className='font-medium'>{movie?.producer}</span></h3>
                                     <h2 className='text-lg'>Director   : <span className='font-medium'>{movie?.director}</span></h2>
                                     <h2 className='text-lg'>Cast  : <span className='font-medium'>{movie.hero},{movie.heroine}</span></h2>
                                     <h2 className='text-lg'>Genere : <span className='font-medium'>{movie.genre}</span></h2>

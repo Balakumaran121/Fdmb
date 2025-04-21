@@ -521,6 +521,7 @@ export const movies = [
     "img": "https://picsum.photos/200/300?random=48",
     "title": "Rise under Darkness",
     "director": "Chloe Zhao",
+    "producer":"Fernan",
     "hero": "Ranveer Singh",
     "heroine": "Natalie Portman",
     "release_date": "2023-08-07",
@@ -531,6 +532,7 @@ export const movies = [
     "id": 49,
     "img": "https://picsum.photos/200/300?random=49",
     "title": "Return from Stars",
+    "producer":"Fernan",
     "director": "Ryan Coogler",
     "hero": "Christian Bale",
     "heroine": "Anne Hathaway",
@@ -542,6 +544,7 @@ export const movies = [
     "id": 50,
     "img": "https://picsum.photos/200/300?random=50",
     "title": "Shadows of Hope",
+    "producer":"Fernan",
     "director": "Zoya Akhtar",
     "hero": "Ranveer Singh",
     "heroine": "Tilda Swinton",
@@ -609,3 +612,12 @@ export const users = [
   }
 ];
 
+
+
+export const producers =[
+  {
+    id:1,
+    name:"Fernan",
+    movies:["Shadows of Hope","Rise under Darkness","Return from Stars"]
+  }
+]
