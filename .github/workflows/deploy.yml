@@ -1,9 +1,10 @@
-name: Deploy vite site to GitHub Pages
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
     branches:
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,13 +19,13 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run : npm ci
+        run: npm ci
       
       - name: Build site
         run: npm run build
       
-      - name: Deploy to Github Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
