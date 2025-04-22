@@ -9,7 +9,7 @@ const AllMoviesCard = ({ movies, handleNavigate, showText }) => {
                 {
                     movies?.length ?
                         movies.map((movie) => (
-                            <div key={movie.id} onClick={() => handleNavigate(movie?.id)}>
+                            <div key={movie.id} onClick={() => handleNavigate(movie?.id)} className='hover:scale-80'>
                                 <img src={movie.img} alt="Def" className='w-72 h-72 rounded-xl' />
                                 <p className='text-center text-md my-3'>{movie.title}</p>
                             </div>

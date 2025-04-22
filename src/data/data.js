@@ -465,6 +465,7 @@ export const movies = [
     "id": 43,
     "img": "https://picsum.photos/200/300?random=43",
     "title": "Legends under Dreams",
+    "producer":"Lina",
     "director": "Greta Gerwig",
     "hero": "Christian Bale",
     "heroine": "Taapsee Pannu",
@@ -489,6 +490,7 @@ export const movies = [
     "title": "Legends under Fire",
     "director": "Anurag Kashyap",
     "hero": "Tom Hardy",
+    "producer":"Lina",
     "heroine": "Florence Pugh",
     "release_date": "2024-11-21",
     "genre": "Action",
@@ -499,6 +501,7 @@ export const movies = [
     "img": "https://picsum.photos/200/300?random=46",
     "title": "Tales from Fury",
     "director": "Marcus Lee",
+    "producer":"Lina",
     "hero": "Jason Schwartzman",
     "heroine": "Zendaya",
     "release_date": "2024-12-28",
@@ -618,6 +621,13 @@ export const producers =[
   {
     id:1,
     name:"Fernan",
+    image: "https://randomuser.me/api/portraits/men/62.jpg",
     movies:["Shadows of Hope","Rise under Darkness","Return from Stars"]
+  },
+  {
+    id:2,
+    name:"Lina",
+    image: "https://randomuser.me/api/portraits/men/61.jpg",
+    movies:["Legends under Fire","Tales from Fury","Legends under Dreams"]
   }
 ]

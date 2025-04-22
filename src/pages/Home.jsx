@@ -6,6 +6,7 @@ import Movies from './Movies'
 import { useDispatch, useSelector } from 'react-redux'
 import { addMovies } from '../redux/moviesSlice'
 import AddMovie from '../components/AddMovie'
+import Producers from '../components/Producers'
 
 const Home = () => {
   const modalRef = useRef()
@@ -92,6 +93,7 @@ const Home = () => {
       <button className='text-black ml-[60%] lg:ml-[90%]  w-fit text-sm font-bold bg-amber-400 px-4 py-3 rounded-md cursor-pointer' onClick={() => setOpenPopup(true)}>Add Movies</button>
       <Movies />
       <BornToday />
+      <Producers/>
       <Footer />
 
       {

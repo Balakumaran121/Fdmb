@@ -44,7 +44,7 @@ const BornToday = () => {
           users.map((val) => (
 
             <SwiperSlide key={val.id} onClick={()=>handleChanges(val)}>
-              <img alt='fe' src={val.image} className='rounded-full h-60 w-60' />
+              <img alt='fe' src={val.image} className='rounded-full h-60 w-60 hover:animate-pulse' />
               <p className='text-white ml-16 my-2'>{val.name}</p>
             </SwiperSlide>
           ))

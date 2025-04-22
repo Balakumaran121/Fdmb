@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Movies from './pages/Movies'
 import Search from './pages/Search'
 import Profile from './pages/Profile'
+import ProducerProfile from './pages/ProducerProfile'
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
       <Route path="/movie/:id" element={<Movies/>}/>
       <Route path='/search/:query' element={<Search/>}/>
       <Route path='/actor/:id' element={<Profile/>}/>
+      <Route path='/producer/:id' element={<ProducerProfile/>}/>
     </Routes>
   )
 }
