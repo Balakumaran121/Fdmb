@@ -14,7 +14,7 @@ const Profile = () => {
           <p className='text-3xl font-semibold'>{dob}</p>
 
           <p className='text-xl font-medium'>{name}</p>
-          <p className='text-md font-normal leading-2.5 tracking-wider my-10'>{bio}</p>
+          <p className='text-md font-normal leading-7 tracking-wider my-10 '>{bio}</p>
           </div>
         </div>
     </div>
