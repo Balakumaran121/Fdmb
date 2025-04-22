@@ -27,7 +27,7 @@ const ProducerProfile = () => {
 
                 </div>
             </div>
-            <h1 className='container mx-auto text-lg font-semibold m-10'>Produced Movies List</h1>
+            <h1 className='container mx-auto text-lg font-semibold m-10 underline decoration-2 underline-offset-8 hover:animate-spin cursor-pointer'>Produced Movies List</h1>
             <ul className='flex gap-4 container mx-auto'>
 
                 {
