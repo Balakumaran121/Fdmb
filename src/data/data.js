@@ -631,3 +631,7 @@ export const producers =[
     movies:["Legends under Fire","Tales from Fury","Legends under Dreams"]
   }
 ]
+
+
+
+export const languageOptions =["Tamil","English","Kannada","Telugu","Malayalam"]

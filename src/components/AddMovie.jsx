@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { languageOptions } from '../data/data'
 const AddMovie = ({options,modalRef,handleChange,addMovieData,err,handleAddMovies,handleReset}) => {
   return (
     <div className='bg-zinc-800/90 fixed inset-0 z-50 flex w-full h-screen items-center justify-center'>
@@ -37,6 +37,17 @@ const AddMovie = ({options,modalRef,handleChange,addMovieData,err,handleAddMovie
               <option key={item.id} value={item?.value?.name}>{item?.label}</option>
             ))
           }
+        </select>
+      </div>
+      <div className='p-4 flex flex-col'>
+        <label htmlFor="Language">Language</label>
+        <select name="language" id="" className='outline-none border-b-2 border-black/15' value={addMovieData.language} onChange={handleChange}>
+        <option value=""></option>
+        {
+          languageOptions.map((item)=>(
+            <option key={item} value={item}>{item}</option>
+          ))
+        }
         </select>
       </div>
       {err && <span className='text-[#ff0000] px-5'>Please fill in all fields.</span>}

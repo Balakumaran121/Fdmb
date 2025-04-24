@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { editMovies, removeMovies } from '../redux/moviesSlice'
 import { ArrowLeft } from 'lucide-react'
+import { languageOptions } from '../data/data'
 
 const MoviesCard = ({ movies }) => {
     const navigate = useNavigate()
@@ -37,6 +38,10 @@ const MoviesCard = ({ movies }) => {
 
     const renderEditInput = (label, name) => (
         <>
+        {
+            label !=="Language"?
+            <>
+
             <h2 className='text-lg'>{label}</h2>
             <input
                 type="text"
@@ -45,6 +50,23 @@ const MoviesCard = ({ movies }) => {
                 onChange={handleChange}
                 className='border border-amber-500 outline-none px-2 py-2 rounded-xl'
             />
+            </>
+            
+            :
+            <> 
+            <h2>{label}</h2>
+            <select name={name} value={selectedData[name]} onChange={handleChange} className='border border-amber-500 outline-none px-2 py-2 rounded-xl' id="">
+                <option value="" className='bg-black text-white'></option>
+                {
+                    languageOptions.map((item,index)=>(
+                            <option key={index} value={item} className='bg-black text-white'>{item}</option>
+                    ))
+                }
+            </select>
+            </>
+
+
+        }
         </>
     )
     const data =["Director","Hero","Heroine","Genre","Language","Release Date"]
