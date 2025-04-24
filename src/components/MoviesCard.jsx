@@ -59,7 +59,7 @@ const MoviesCard = ({ movies }) => {
                     Back
                 </button>
 
-                <div className='inline-flex gap-3'>
+                <div className='inline-flex gap-10'>
                     <button
                         className='text-amber-400 text-xl font-medium cursor-pointer hover:scale-150'
                         onClick={handleEditToggle}

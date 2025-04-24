@@ -43,7 +43,7 @@ const AddMovie = ({options,modalRef,handleChange,addMovieData,err,handleAddMovie
       <button className='px-10 py-2 my-4 bg-amber-500 text-lg font-medium cursor-pointer hover:bg-amber-600 rounded-md mx-28' onClick={handleAddMovies}>
         Submit
       </button>
-      <p className='text-end pr-5 underline hover:text-amber-900' onClick={handleReset}>Reset</p>
+      <p className='text-end pr-5 underline hover:text-amber-900 m-4' onClick={handleReset}>Reset</p>
     </div>
   </div>
   )
